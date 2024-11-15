@@ -38,7 +38,7 @@ const TextStyle buttonTextStyle = TextStyle(
   color: Colors.white,
 );
 
-// Página Inicial
+// Página Inicial teste
 class FitnessHomePage extends StatelessWidget {
   const FitnessHomePage({Key? key}) : super(key: key);
 
