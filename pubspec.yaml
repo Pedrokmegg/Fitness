@@ -54,7 +54,8 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/background.png
-
+    - assets/images/homem.png
+    - assets/images/mulher.png
 
 
   # The following line ensures that the Material Icons font is
