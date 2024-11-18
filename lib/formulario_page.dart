@@ -127,21 +127,22 @@ class _GenderPageState extends State<GenderPage> {
             ),
 
             // Botão "Continuar"
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 50,
               child: ElevatedButton(
+                onPressed: _selectedGender != null
+                    ? () {
+                        setState(() => _currentPage++);
+                        Navigator.pushNamed(context, '/formulario_page2');
+                      }
+                    : null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFFF0048),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(19.0),
                   ),
                 ),
-                onPressed: _selectedGender != null
-                    ? () {
-                        setState(() => _currentPage++);
-                      }
-                    : null,
                 child: const Text(
                   'Continuar',
                   style: TextStyle(
@@ -177,7 +178,7 @@ class _GenderPageState extends State<GenderPage> {
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: const Color(0xFFFF0048).withOpacity(0.4),
+                    color: const Color(0xFFFF0048).withOpacity(0.18),
                     blurRadius: 20,
                     spreadRadius: 4,
                     offset: const Offset(0, 4),
