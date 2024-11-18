@@ -1,3 +1,4 @@
+import 'package:fitness/formulario_page3.dart';
 import 'package:flutter/material.dart';
 import 'fitness_home_page.dart';
 import 'cadastro_page.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginPage(),
         '/formulario_page': (context) => const GenderPage(),
         '/formulario_page2': (context) => const FormularioPage2(),
+        '/formulario_page3': (context) => const FormularioPage3()
       },
     );
   }
